@@ -32,7 +32,7 @@ return [
 
     'logo' => '<b>Turbalkom</b> Dashboard',
 
-    'logo_mini' => '<b>T</b>DAS',
+    'logo_mini' => '<b>D</b>ASH',
 
     /*
     |--------------------------------------------------------------------------

@@ -64,7 +64,7 @@
                 <div class="icon">
                     <i class="ion ion-pie-graph"></i>
                 </div>
-                <a href="{{ route('test') }}" class="small-box-footer">مشاهده التفاصيل </a>
+                <a href="" class="small-box-footer">مشاهده التفاصيل </a>
             </div>
         </div>
         <!-- ./col -->
