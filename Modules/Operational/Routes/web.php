@@ -13,4 +13,8 @@
 
 Route::prefix('admin/operational')->group(function() {
     Route::get('/', 'OperationalController@index');
+
+    Route::get('/create',function (){
+       return view('operational::create');
+    });
 });

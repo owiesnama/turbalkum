@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTypesTable extends Migration
+class CreateOperationalTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -18,7 +18,7 @@ class CreateTypesTable extends Migration
             $table->string('name');
             $table->unsignedInteger('service_id');
             
-            $table->foreign('service_id')->referances('id')->on('operational_services');
+//            $table->foreign('service_id')->referances('id')->on('operational_services');
             
             $table->timestamps();
         });
