@@ -11,6 +11,7 @@
 |
 */
 
-Route::prefix('admin/operational')->group(function() {
-    Route::get('/', 'OperationalController@index');
+Route::prefix('admin/user')->group(function() {
+    Route::get('/', 'UserController@index')->name('user.index');
+    Route::get('/profile', 'UserController@profile')->name('user.profile');
 });

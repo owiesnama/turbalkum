@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 2',
+    'title' => 'dashboard',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Turbalkom</b> Dashboard',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b>T</b>DAS',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,11 +96,11 @@ return [
     |
     */
 
-    'dashboard_url' => 'home',
+    'dashboard_url' => 'admin/dashboard',
 
     'logout_url' => 'logout',
 
-    'logout_method' => null,
+    'logout_method' => 'post',
 
     'login_url' => 'login',
 
@@ -119,28 +119,28 @@ return [
     */
 
     'menu' => [
-        'MAIN NAVIGATION',
+        'القائمة الرئيسية',
         [
-            'text' => 'Blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'text'        => 'لوحة التحكم',
+            'url'         => 'admin/dashboard',
+//            'label'       => 4,
+//            'label_color' => 'success',
         ],
         [
-            'text'        => 'Pages',
-            'url'         => 'admin/pages',
-            'icon'        => 'file',
-            'label'       => 4,
-            'label_color' => 'success',
+            'text'        => 'المستخدمين',
+            'url'         => 'admin/user',
+//            'label'       => 4,
+//            'label_color' => 'success',
         ],
         'ACCOUNT SETTINGS',
         [
             'text' => 'Profile',
-            'url'  => 'admin/settings',
+            'url'  => 'dashboard/settings',
             'icon' => 'user',
         ],
         [
             'text' => 'Change Password',
-            'url'  => 'admin/settings',
+            'url'  => 'dashboard/settings',
             'icon' => 'lock',
         ],
         [
@@ -181,19 +181,19 @@ return [
                 ],
             ],
         ],
-        'LABELS',
-        [
-            'text'       => 'Important',
-            'icon_color' => 'red',
-        ],
-        [
-            'text'       => 'Warning',
-            'icon_color' => 'yellow',
-        ],
-        [
-            'text'       => 'Information',
-            'icon_color' => 'aqua',
-        ],
+//        'LABELS',
+//        [
+//            'text'       => 'Important',
+//            'icon_color' => 'red',
+//        ],
+//        [
+//            'text'       => 'Warning',
+//            'icon_color' => 'yellow',
+//        ],
+//        [
+//            'text'       => 'Information',
+//            'icon_color' => 'aqua',
+//        ],
     ],
 
     /*

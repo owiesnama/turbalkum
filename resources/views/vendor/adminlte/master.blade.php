@@ -15,6 +15,9 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/Ionicons/css/ionicons.min.css') }}">
 
+    {{--google fonts--}}
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
 @if(config('adminlte.plugins.select2'))
     <!-- Select2 -->
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.css">
@@ -23,7 +26,8 @@
 <!-- Theme style -->
     @if(config('adminlte.rtl'))
         <link rel="stylesheet" href="{{ asset('css/AdminLTE-rtl.css') }}">
-        <link rel="stylesheet" href="{{ assert('css/_all-skins-rtl.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/_all-skins-rtl.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/custom_style.css') }}">
     @else
         <link rel="stylesheet" href="{{ asset('vendor/adminlte/dist/css/AdminLTE.min.css') }}">
     @endif

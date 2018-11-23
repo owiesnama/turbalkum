@@ -1,13 +1,12 @@
 <?php
 
-namespace Modules\Dashboard\Http\Controllers;
+namespace Modules\User\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Cache;
 
-class DashboardController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +14,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard::index');
+        return view('user::index');
     }
 
     /**
@@ -24,7 +23,7 @@ class DashboardController extends Controller
      */
     public function create()
     {
-        return view('dashboard::create');
+        return view('user::create');
     }
 
     /**
@@ -42,7 +41,7 @@ class DashboardController extends Controller
      */
     public function show()
     {
-        return view('dashboard::show');
+        return view('user::show');
     }
 
     /**
@@ -51,7 +50,7 @@ class DashboardController extends Controller
      */
     public function edit()
     {
-        return view('dashboard::edit');
+        return view('user::edit');
     }
 
     /**
@@ -69,5 +68,14 @@ class DashboardController extends Controller
      */
     public function destroy()
     {
+    }
+
+    /**
+     * show user profile
+     * @return Response
+     */
+    public function profile()
+    {
+        return view('user::profile');
     }
 }
