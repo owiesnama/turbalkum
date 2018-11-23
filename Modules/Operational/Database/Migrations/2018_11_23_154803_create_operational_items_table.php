@@ -17,8 +17,15 @@ class CreateItemsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->unsignedInteger('type_id');
-            
-            $table->foreign('type_id')->referances('id')->on('operational_types');
+            $table->string('country_of_made');
+            $table->string('model');
+            $table->integer('warranty_years');
+            $table->integer('price');
+
+            $table->json('service_type');
+            $table->json('additional_services');
+
+//            $table->foreign('type_id')->referances('id')->on('operational_types');
 
             $table->timestamps();
         });

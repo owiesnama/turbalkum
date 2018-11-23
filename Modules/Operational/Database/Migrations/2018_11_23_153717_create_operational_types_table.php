@@ -18,7 +18,7 @@ class CreateTypesTable extends Migration
             $table->string('name');
             $table->unsignedInteger('service_id');
             
-            $table->foreign('service_id')->referances('id')->on('operational_services');
+//            $table->foreign('service_id')->referances('id')->on('operational_services');
             
             $table->timestamps();
         });

@@ -16,6 +16,8 @@ class CreateServicesTable extends Migration
         Schema::create('operational_services', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->unsignedInteger('module_id');
+
             $table->timestamps();
         });
     }
