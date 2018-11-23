@@ -5,7 +5,7 @@ namespace Modules\Operational\Entities;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Module\Entities\Module;
 
-class Service extends Model
+class OperationalService extends Model
 {
     protected $fillable = ['name'];
 
@@ -14,6 +14,6 @@ class Service extends Model
     }
 
     public function types(){
-        return $this->hasMany(Type::class);
+        return $this->hasMany(OperationalType::class);
     }
 }

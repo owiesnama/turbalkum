@@ -13,12 +13,12 @@ class CreateTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('types', function (Blueprint $table) {
+        Schema::create('operational_types', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->unsignedInteger('service_id');
             
-            $table->foreign('service_id')->referances('id')->on('services');
+            $table->foreign('service_id')->referances('id')->on('operational_services');
             
             $table->timestamps();
         });
@@ -29,8 +29,7 @@ class CreateTypesTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
-        Schema::dropIfExists('types');
+    public function down(){
+        Schema::dropIfExists('operational_types');
     }
 }

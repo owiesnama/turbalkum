@@ -13,12 +13,12 @@ class CreateItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('items', function (Blueprint $table) {
+        Schema::create('operational_items', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->unsignedInteger('type_id');
             
-            $table->foreign('type_id')->referances('id')->on('types');
+            $table->foreign('type_id')->referances('id')->on('operational_types');
 
             $table->timestamps();
         });
@@ -31,6 +31,6 @@ class CreateItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('items');
+        Schema::dropIfExists('operational_items');
     }
 }
